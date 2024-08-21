@@ -13,13 +13,13 @@ while True:
 
     if escolha == '1':
 
-        resultado = resultado = carregaMI("1Milhao.txt",1000000)
+        resultado = procuraMI("1Milhao.txt",1000000)
         
         print("--"*16)
         print(f"Número {resultado['resultado_funcao']['numero_procurado']} {'encontrado' if resultado['resultado_funcao']['encontrado'] else 'não encontrado'}")
         print(f"Tempo total: {resultado['tempo_total']} segundos")
         print(f"Uso de CPU: {resultado['uso_cpu']}%")
-        print(f"Uso de Memória: {resultado['uso_memoria']} bytes")
+        print(f"Uso de Memória: {resultado['uso_memoria']/ (1024 * 1024):.2f} MB")
         print("--"*16)
 
     elif escolha == '2':
@@ -29,7 +29,7 @@ while True:
         print(f"Número {resultado['resultado_funcao']['numero_procurado']} {'encontrado' if resultado['resultado_funcao']['encontrado'] else 'não encontrado'}")
         print(f"Tempo total: {resultado['tempo_total']} segundos")
         print(f"Uso de CPU: {resultado['uso_cpu']}%")
-        print(f"Uso de Memória: {resultado['uso_memoria']} bytes")
+        print(f"Uso de Memória: {resultado['uso_memoria']/ (1024 * 1024):.2f} MB")
         print("--"*16)
 
     elif escolha == '3':
@@ -39,7 +39,7 @@ while True:
         print(f"Número {resultado['resultado_funcao']['numero_procurado']} {'encontrado' if resultado['resultado_funcao']['encontrado'] else 'não encontrado'}")
         print(f"Tempo total: {resultado['tempo_total']} segundos")
         print(f"Uso de CPU: {resultado['uso_cpu']}%")
-        print(f"Uso de Memória: {resultado['uso_memoria']} bytes")
+        print(f"Uso de Memória: {resultado['uso_memoria']/ (1024 * 1024):.2f} MB")
         print("--"*16)
 
     elif escolha == '4':
